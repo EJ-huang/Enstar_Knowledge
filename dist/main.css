@@ -85,7 +85,6 @@
   background-image: url(0c94439211448a7e0666.gif); }
 
 .main {
-  /* margin:auto;  */
   width: auto; }
 
 .main #one {
@@ -126,6 +125,34 @@
 .qa-pattern {
   background-image: url(2219c49dcd7e6966c292.gif); }
 
+.teacher_1 {
+  counter-reset: section; }
+  .teacher_1 h4::before {
+    color: #FE8A8A;
+    counter-increment: section;
+    content: counter(section) "."; }
+
+.teacher_2 {
+  counter-reset: section2; }
+  .teacher_2 h4::before {
+    color: #FE8A8A;
+    counter-increment: section2;
+    content: counter(section2) "."; }
+
+.teacher_3 {
+  counter-reset: section3; }
+  .teacher_3 h4::before {
+    color: #FE8A8A;
+    counter-increment: section3;
+    content: counter(section3) "."; }
+
+.teacher_4 {
+  counter-reset: section4; }
+  .teacher_4 h4::before {
+    color: #FE8A8A;
+    counter-increment: section4;
+    content: counter(section4) "."; }
+
 .main #triangle, .aside #triangle {
   width: 0;
   height: 0;
@@ -156,4 +183,55 @@
   color: #EE7E00;
   top: 100%;
   left: 0; }
+
+@media screen and (min-width: 767px) {
+  .main #one {
+    display: flex; }
+  .main #two {
+    display: none; }
+  .main2 #one {
+    display: flex; }
+  .main2 #two {
+    display: none; }
+  .main4 #one {
+    display: flex; }
+  .main4 #two {
+    display: none; }
+  .qa-pattern #one {
+    display: flex; }
+  .qa-pattern #two {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .bg_header {
+    background-image: url(e3d8c6b40775b4808e21.gif);
+    background-size: contain;
+    min-height: auto; }
+  .main #one {
+    display: none; }
+  .main #two {
+    display: flex;
+    width: 100px; }
+  .main3 #one {
+    display: none; }
+  .main3 #two {
+    display: flex;
+    width: 100px; }
+  .main4 #one {
+    display: none; }
+  .main4 #two {
+    display: flex;
+    width: 100px; }
+  .main2 #one {
+    display: none; }
+  .main2 #two {
+    display: flex;
+    width: 100px; }
+  .bg-class2 {
+    background-image: url(6c6b80b649f279a1d53f.gif);
+    background-size: cover; }
+  .qa-pattern #one {
+    display: none; }
+  .qa-pattern #two {
+    display: flex; } }
 
